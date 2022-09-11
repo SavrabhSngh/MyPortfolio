@@ -1,0 +1,41 @@
+.features {
+    padding-top: 8vh;
+}
+
+.features .heading {
+    padding-bottom: 2vh;
+}
+
+.features .grid {
+    margin-top: 2vh;
+}
+
+.features .card{
+    height: 100%;
+    width: 100%;
+}
+
+.features .card h2 {
+    margin: 20px 0 20px 0;
+}
+
+.features .card p {
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+
+.features .card i {
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.features .card:hover p {
+    color: white;
+}
+
+.features .card:hover i {
+    color: white;
+    opacity: 1;
+}

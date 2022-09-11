@@ -1,0 +1,78 @@
+.projects {
+    padding-top: 8vh;
+}
+
+.projects .card {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+
+.projects .card:hover {
+    background: none;
+    color: #43474b;
+    transform: translateY(0);
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.projects .card .img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.projects .category {
+    text-transform: uppercase;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.projects .category span {
+    color: #ff014f;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.projects .arrow {
+    transform: rotate(-45deg);
+    color: #ff014f;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.projects .category,
+.projects .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .title:hover .arrow {
+    opacity: 1;
+}
+
+.projects h2 {
+    font-size: 18px;
+    transition: 0.5s;
+    padding-bottom: 30px;
+}
+
+.projects .card:hover h2 {
+    color: #ff014f;
+}
+
+.projects label i {
+    margin-right: 10px;
+}
