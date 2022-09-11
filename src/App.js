@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "./App.css";
 import Snackbars from "./Common/Snackbar";
 import { useEffect } from "react";
-import { showSnackbar } from "./Store/Snackbar/action";
 import DrawerAppBar from "./Components/DrawerAppBar";
 import Features from "./Components/Features/Features";
 import Projects from "./Components/Projects/Projects";
@@ -13,12 +12,6 @@ function App(props) {
   };
 
   useEffect(() => {
-    props.showSnackbar({
-      open: true,
-      autoHideDuration: 6000,
-      severity: "success",
-      message: "PropTypes.string",
-    });
     window.addEventListener("contextmenu", handleContextMenu);
     return () => {
       window.removeEventListener("contextmenu", handleContextMenu);
@@ -42,9 +35,7 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, {
-  showSnackbar,
-})(App);
+export default connect(mapStateToProps, {})(App);
 
 App.propTypes = {
   snackbarData: PropTypes.shape({
