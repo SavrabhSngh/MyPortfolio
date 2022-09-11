@@ -39,4 +39,8 @@
     .hide {
         display: none;
     }    
+
+    .heading h4 {
+        letter-spacing: 0px;
+    }
 }

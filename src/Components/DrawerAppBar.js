@@ -14,7 +14,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-const drawerWidth = 240;
 const navItems = ["Home", "About", "Resume", "Projects", "Contact"];
 
 function DrawerAppBar(props) {
@@ -61,6 +60,15 @@ function DrawerAppBar(props) {
           </IconButton>
           <Typography
             variant="h6"
+            sx={{
+              flexGrow: 1,
+              display: { lg: "none", xs: "block", md: "none", sm: "none" },
+            }}
+          >
+            Savrabh Singh
+          </Typography>
+          <Typography
+            variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
@@ -88,7 +96,7 @@ function DrawerAppBar(props) {
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth,
+              width: "75%",
             },
           }}
         >
