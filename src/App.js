@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./App.css";
 import DocumentLoader from "./Common/Loader/DocumentLoader";
 import Snackbars from "./Common/Snackbar";
-import DrawerAppBar from "./Components/DrawerAppBar";
+import DrawerAppBar from "./Components/AppBar/DrawerAppBar";
 import Features from "./Components/Features/Features";
 import Projects from "./Components/Projects/Projects";
 function App(props) {

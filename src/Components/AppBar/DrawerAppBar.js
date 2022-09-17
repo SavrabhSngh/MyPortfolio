@@ -12,7 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import "./DrawerAppBar.css";
 
 const navItems = ["Home", "About", "Resume", "Projects", "Contact"];
 
@@ -47,14 +47,21 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar
+        component="nav"
+        sx={{
+          color: "#000",
+          background: "#ecf0f3",
+          boxShadow: "-1px 11px 24px -11px rgb(0 0 0 / 75%)",
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "#ff014f" }}
           >
             <MenuIcon />
           </IconButton>
@@ -75,10 +82,16 @@ function DrawerAppBar(props) {
             Savrabh Radhemohan Singh
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+            {navItems.map((item, index) => (
+              <a
+                href="#some"
+                key={item}
+                className={
+                  index === navItems.length - 1 ? "nav-button" : "nav-content"
+                }
+              >
                 {item}
-              </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>
@@ -97,6 +110,7 @@ function DrawerAppBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: "75%",
+              background: "#ecf0f3",
             },
           }}
         >
