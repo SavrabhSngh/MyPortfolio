@@ -15,7 +15,7 @@ export default function FeaturesCard(props) {
       md={6}
       xs={12}
     >
-      <div className={props.index < 3 ? "card show" : "card hide"}>
+      <div>
         <img src={props.image} alt="" />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
