@@ -3,8 +3,19 @@ import Grid from "@mui/material/Grid";
 
 export default function ProjectsCard(props) {
   return (
-    <Grid item lg={4} sm={6} md={6} xs={12}>
-      <div className={props.index < 3 ? "card show" : "card hide"}>
+    <Grid
+      display={
+        props.index < 4
+          ? { xs: "block", md: "block", lg: "block" }
+          : { xs: "none", md: "block", lg: "block" }
+      }
+      item
+      lg={4}
+      sm={6}
+      md={6}
+      xs={12}
+    >
+      <div className="card">
         <div className="img">
           <img src={props.image} alt="" />
         </div>

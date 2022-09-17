@@ -3,7 +3,18 @@ import Grid from "@mui/material/Grid";
 
 export default function FeaturesCard(props) {
   return (
-    <Grid item lg={4} sm={6} md={6} xs={12}>
+    <Grid
+      display={
+        props.index < 4
+          ? { xs: "block", md: "block", lg: "block" }
+          : { xs: "none", md: "block", lg: "block" }
+      }
+      item
+      lg={4}
+      sm={6}
+      md={6}
+      xs={12}
+    >
       <div className={props.index < 3 ? "card show" : "card hide"}>
         <img src={props.image} alt="" />
         <h2>{props.title}</h2>
