@@ -15,7 +15,7 @@ export default function FeaturesCard(props) {
       md={6}
       xs={12}
     >
-      <div>
+      <div className="card">
         <img src={props.image} alt="" />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
