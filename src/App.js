@@ -1,32 +1,49 @@
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import "./App.css";
+import DocumentLoader from "./Common/Loader/DocumentLoader";
 import Snackbars from "./Common/Snackbar";
-import { useEffect } from "react";
 import DrawerAppBar from "./Components/DrawerAppBar";
 import Features from "./Components/Features/Features";
 import Projects from "./Components/Projects/Projects";
 function App(props) {
+  const [documentState, setDocumentState] = useState(false);
+  const [timmer, setTimmer] = useState(false);
   const handleContextMenu = (e) => {
     e.preventDefault();
   };
 
   useEffect(() => {
+    setDocumentState(true);
+  }, [document.readyState]);
+
+  useEffect(() => {
     window.addEventListener("contextmenu", handleContextMenu);
+    setTimeout(() => {
+      setTimmer(true);
+    }, 5000);
     return () => {
       window.removeEventListener("contextmenu", handleContextMenu);
     };
   }, []);
-  return (
-    <div className="App">
-      <DrawerAppBar />
-      <div className="container">
-        <Features />
-        <Projects />
-      </div>
-      <Snackbars />
-    </div>
-  );
+
+  if (timmer) {
+    if (documentState) {
+      return (
+        <div className="App">
+          <DrawerAppBar />
+          <div className="container">
+            <Features />
+            <Projects />
+          </div>
+          <Snackbars />
+        </div>
+      );
+    }
+  } else {
+    return <DocumentLoader />;
+  }
 }
 
 const mapStateToProps = (state) => {
