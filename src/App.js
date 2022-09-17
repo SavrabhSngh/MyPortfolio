@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import "./App.css";
 import DocumentLoader from "./Common/Loader/DocumentLoader";
+import BasicModal from "./Common/Modal/Modal";
 import Snackbars from "./Common/Snackbar";
 import DrawerAppBar from "./Components/AppBar/DrawerAppBar";
 import Features from "./Components/Features/Features";
@@ -37,6 +38,7 @@ function App(props) {
             <Features />
             <Projects />
           </div>
+          <BasicModal />
           <Snackbars />
         </div>
       );

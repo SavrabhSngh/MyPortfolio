@@ -1,0 +1,52 @@
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none!important;
+    background: linear-gradient(145deg,#e2e8ec,#fff);
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px 25px;
+    transition: all .5s ease;
+}
+
+.shadow:hover {
+    background: #ff014f;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.right-side p {
+    text-align: justify;
+    margin-top: 2vh;
+    font-size: 15px;
+}
+
+.right-side span {
+    color: #ff014f;
+} 
+
+.right-side h1 {
+    font-size: 25px;
+    margin-top: 2vh;
+}
+
+.right-side button i {
+    margin-left: 10px;
+}

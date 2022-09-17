@@ -1,7 +1,14 @@
 import * as React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import Grid from "@mui/material/Grid";
+import { showModal } from "../Store/Modal/action";
 
-export default function ProjectsCard(props) {
+function ProjectsCard(props) {
+  const handleClick = () => {
+    props.showModal({ open: true, ...props });
+  };
+
   return (
     <Grid
       display={
@@ -15,7 +22,7 @@ export default function ProjectsCard(props) {
       md={6}
       xs={12}
     >
-      <div className="card">
+      <div className="card" onClick={handleClick}>
         <div className="img">
           <img src={props.image} alt="" />
         </div>
@@ -36,3 +43,15 @@ export default function ProjectsCard(props) {
     </Grid>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {};
+};
+
+export default connect(mapStateToProps, {
+  showModal,
+})(ProjectsCard);
+
+ProjectsCard.propTypes = {
+  showModal: PropTypes.func.isRequired,
+};
