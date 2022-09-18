@@ -1,0 +1,14 @@
+footer {
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-buttons i {
+    font-size: 17px;
+}

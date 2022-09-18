@@ -28,7 +28,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Savrabh Singh
+        SAVRABH SINGH
       </Typography>
       <Divider />
       <List>
@@ -80,14 +80,14 @@ function DrawerAppBar(props) {
               display: { lg: "none", xs: "block", md: "none", sm: "none" },
             }}
           >
-            Savrabh Singh
+            SAVRABH SINGH
           </Typography>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Savrabh Radhemohan Singh
+            SAVRABH R SINGH
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item, index) => (

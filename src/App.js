@@ -8,7 +8,8 @@ import Snackbars from "./Common/Snackbar";
 import DrawerAppBar from "./Components/AppBar/DrawerAppBar";
 import Features from "./Components/Features/Features";
 import Projects from "./Components/Projects/Projects";
-import About from "./Components/About";
+import About from "./Components/About/index";
+import Footer from "./Components/Footer/Footer";
 function App(props) {
   const [documentState, setDocumentState] = useState(false);
   const [timmer, setTimmer] = useState(false);
@@ -40,6 +41,7 @@ function App(props) {
             <Features />
             <Projects />
           </div>
+          <Footer />
           <BasicModal />
           <Snackbars />
         </div>
