@@ -20,7 +20,7 @@ const About = () => {
         </Grid>
         <Grid
           sx={{
-            display: "flex",
+            display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
             justifyContent: "center",
             alignItems: "center",
           }}

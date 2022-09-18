@@ -1,7 +1,9 @@
 import React from "react";
 import "./LHSComponent.css";
+import Container from "@mui/material/Container";
 import { Typewriter } from "react-simple-typewriter";
 import { DUMMY_TEXT } from "../../../Messages";
+import RHSabout from "../RHS/RHSComponent";
 
 const LHSabout = () => {
   const words = ["Profssional Coder", "Software Engineer"];
@@ -25,6 +27,15 @@ const LHSabout = () => {
           />
         </span>
       </h2>
+      <Container
+        sx={{
+          display: { xs: "flex", sm: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <RHSabout />
+      </Container>
       <p>{DUMMY_TEXT}</p>
       <p>{DUMMY_TEXT}</p>
     </div>
