@@ -1,0 +1,31 @@
+.left-about h3 {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.left-about h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.left-about h1 span {
+    color: #ff014f;
+}
+
+.left-about h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff014f;
+}
+
+.left-about h2 span {
+    color: black;
+}
+
+.left-about p {
+    text-align: justify;
+    margin-top: 2vh;
+    font-size: 15px;
+    color: #878e99;
+    padding-right: 5vw;
+}

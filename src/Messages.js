@@ -1,2 +1,2 @@
-export const DUMMY_TEST =
+export const DUMMY_TEXT =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac auctor augue mauris augue neque gravida. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Viverra mauris in aliquam sem fringilla. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Mauris augue neque gravida in fermentum. At imperdiet dui accumsan sit. Neque vitae tempus quam pellentesque nec nam aliquam. Aliquam sem et tortor consequat id. Purus in massa tempor nec feugiat.";

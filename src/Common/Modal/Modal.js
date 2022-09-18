@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Grid from "@mui/material/Grid";
 import { hideModal } from "../../Store/Modal/action";
-import { DUMMY_TEST } from "../../Messages";
+import { DUMMY_TEXT } from "../../Messages";
 
 const style = {
   position: "absolute",
@@ -29,17 +29,13 @@ function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Grid
-            container
-            rowSpacing={3}
-            columnSpacing={{ lg: 1, sm: 1, md: 5 }}
-          >
+          <Grid container rowSpacing={3} columnSpacing={{ lg: 4, md: 4 }}>
             <Grid
               display={{ xs: "none", md: "block", lg: "block" }}
               item
               lg={5}
             >
-              <img src={props.ModalData.image} alt="" />
+              <img className="modal-image" src={props.ModalData.image} alt="" />
             </Grid>
             <Grid
               display={{ xs: "none", md: "block", lg: "block" }}
@@ -49,8 +45,8 @@ function BasicModal(props) {
               <div className="right-side">
                 <span>Featured-Design</span>
                 <h1>{props.ModalData.title}</h1>
-                <p>{DUMMY_TEST}</p>
-                <p>{DUMMY_TEST}</p>
+                <p>{DUMMY_TEXT}</p>
+                <p>{DUMMY_TEXT}</p>
                 <div className="button">
                   <button className="shadow">
                     LIKE THIS <i className="far fa-thumbs-up"></i>

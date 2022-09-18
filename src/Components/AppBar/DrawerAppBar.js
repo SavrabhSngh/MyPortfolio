@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./DrawerAppBar.css";
+import { downloadPdf } from "../../Helpers";
 
 const navItems = ["Home", "About", "Resume", "Projects", "Contact"];
 
@@ -44,6 +45,13 @@ function DrawerAppBar(props) {
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
+
+  const handleClick = (e) => {
+    const text = e.target.outerText;
+    if (!text.localeCompare("Resume")) {
+      downloadPdf("./pdf/resume.pdf", "SavrabhSDE.pdf");
+    }
+  };
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -89,6 +97,7 @@ function DrawerAppBar(props) {
                 className={
                   index === navItems.length - 1 ? "nav-button" : "nav-content"
                 }
+                onClick={handleClick}
               >
                 {item}
               </a>
