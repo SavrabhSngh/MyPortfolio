@@ -13,22 +13,15 @@ import Footer from "./Footer/Footer";
 function Components(props) {
   const [documentState, setDocumentState] = useState(false);
   const [timmer, setTimmer] = useState(false);
-  const handleContextMenu = (e) => {
-    e.preventDefault();
-  };
 
   useEffect(() => {
     setDocumentState(true);
   }, [document.readyState]);
 
   useEffect(() => {
-    window.addEventListener("contextmenu", handleContextMenu);
     setTimeout(() => {
       setTimmer(true);
     }, 5000);
-    return () => {
-      window.removeEventListener("contextmenu", handleContextMenu);
-    };
   }, []);
 
   if (timmer) {
