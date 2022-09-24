@@ -6,11 +6,11 @@ const LHSContact = () => {
           <img src="./images/contact.png" alt="contact" />
         </div>
         <p>
-          <i class="fas fa-home"></i> B-201 FIRST AVENUE, FATHERWADI, GOKHIWARE,
-          VASAI EAST - 401208
+          <i className="fas fa-home"></i> B-201 FIRST AVENUE, FATHERWADI,
+          GOKHIWARE, VASAI EAST - 401208
         </p>
         <p>
-          <i class="fas fa-mobile"></i> +91 9026472660
+          <i className="fas fa-mobile"></i> +91 9026472660
         </p>
       </div>
     </div>

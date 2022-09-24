@@ -12,7 +12,7 @@ const Features = () => {
         <h1>What I Do </h1>
       </div>
       <div className="grid">
-        <Grid container rowSpacing={3} columnSpacing={{ lg: 1, sm: 1, md: 5 }}>
+        <Grid container rowSpacing={4} columnSpacing={{ lg: 5, sm: 4, md: 5 }}>
           {FeaturesData.map((obj, index) => {
             return (
               <FeaturesCard

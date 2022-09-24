@@ -12,7 +12,7 @@ const Projects = () => {
         <h1>My Projects</h1>
       </div>
       <div className="content grid">
-        <Grid container rowSpacing={3} columnSpacing={{ lg: 1, sm: 1, md: 5 }}>
+        <Grid container rowSpacing={4} columnSpacing={{ lg: 5, sm: 4, md: 5 }}>
           {PortfolioData.map((obj, index) => {
             return (
               <ProjectsCard
