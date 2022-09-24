@@ -1,0 +1,84 @@
+.contact {
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+}
+
+.contact .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    margin-top: 2vh;
+}
+
+.contact-me h3 {
+    padding-bottom: 2vh;
+}
+
+.contact-me .card p {
+    text-align: justify;
+}
+
+.contact-me .card p i {
+    padding-right: 8px;
+}
+
+.contact-body .card {
+    padding: 5% 5% 5% 5%;
+}
+
+.contact-body .card:hover {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);;
+    color: #43474b;
+    transform: translateY(0);
+    cursor: auto;
+}
+
+.contact-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-submit {
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #fff;
+    cursor: pointer;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 18px 18px;
+    transition: all .3s ease;
+    background: #ff014f;
+    color: white;    
+    font-size: large;
+    letter-spacing: "1px";
+    font-weight: "500";
+    border: none;
+    width: 100%;
+    letter-spacing: 1px;
+    margin-top: 2vh;
+}
+
+/* .contact-submit:hover {
+    border: none!important;
+    background: linear-gradient(145deg,#e2e8ec,#fff);
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #fff;
+    color: #000!important;
+    cursor: pointer;
+} */
+
+.contact-submit i {
+    margin-left: 10px;
+}

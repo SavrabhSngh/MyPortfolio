@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { makeStyles } from "@mui/styles";
-import LHSabout from "./LHS/LHSComponent";
-import RHSabout from "./RHS/RHSComponent";
+import LHSabout from "./LHSComponent";
+import RHSabout from "./RHSComponent";
 
 const useStyles = makeStyles({
   about: {

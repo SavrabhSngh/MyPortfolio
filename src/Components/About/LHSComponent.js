@@ -1,9 +1,9 @@
 import React from "react";
-import "./LHSComponent.css";
+import "./index.css";
 import { Typewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
-import { DUMMY_TEXT } from "../../../Messages";
-import RHSabout from "../RHS/RHSComponent";
+import { DUMMY_TEXT } from "../../Messages";
+import RHSabout from "./RHSComponent";
 
 const LHSabout = () => {
   const words = ["Software Engineer", "Freelancer", "MERN Stack developer"];
@@ -41,22 +41,22 @@ const LHSabout = () => {
       <div className="about-skills">
         <h4>BEST SKILLS ON</h4>
         <button className="shadow">
-          <i class="fab fa-react"></i>
+          <i className="fab fa-react"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-node"></i>
+          <i className="fab fa-node"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-angular"></i>
+          <i className="fab fa-angular"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-js"></i>
+          <i className="fab fa-js"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-aws"></i>
+          <i className="fab fa-aws"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </button>
       </div>
     </div>

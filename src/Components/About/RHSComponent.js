@@ -1,5 +1,5 @@
 import React from "react";
-import "./RHSComponent.css";
+import "./index.css";
 const RHSabout = () => {
   return (
     <div className="right-about">

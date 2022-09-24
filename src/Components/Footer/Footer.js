@@ -13,7 +13,7 @@ const Footer = () => {
           <i className="fab fa-facebook-f"></i>
         </button>
         <button className="shadow">
-          <i class="fab fa-whatsapp"></i>
+          <i className="fab fa-whatsapp"></i>
         </button>
         <button className="shadow">
           <i className="fab fa-instagram"></i>
