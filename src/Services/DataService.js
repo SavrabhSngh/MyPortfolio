@@ -82,3 +82,36 @@ export const PortfolioData = [
     image: "./images/web.jpg",
   },
 ];
+
+export const ExperienceData = [
+  {
+    id: 1,
+    color: "success",
+    company: "Flair Labs",
+    location: "Mumbai",
+    designation: "Associate Software Engineer",
+    startDate: "July 2021",
+    endDate: "Present",
+    description: ["Learned React", "Earned Money"],
+  },
+  {
+    id: 2,
+    company: "GeeksforGeeks",
+    color: "secondary",
+    location: "Noida",
+    designation: "Technical Content Writer",
+    startDate: "July 2021",
+    endDate: "Sep 2021",
+    description: ["Learned React", "Earned Money"],
+  },
+  {
+    id: 3,
+    company: "Fcreation LLP",
+    color: "secondary",
+    location: "Mumbai",
+    designation: "PHP Developer",
+    startDate: "Dec 2020",
+    endDate: "July 2021",
+    description: ["Learned React", "Earned Money"],
+  },
+];
