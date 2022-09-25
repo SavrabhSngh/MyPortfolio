@@ -56,6 +56,10 @@
     padding-left: 1vw;
 }
 
+.swiper-pagination {
+    position: unset!important;
+}
+
 
 @media (max-width: 676px) {
     .testimonial h4 {
