@@ -1,3 +1,4 @@
+import ContextMenu from "../../Common/ContextMenu/ContextMenu";
 import "./NoMatch.css";
 const NoMatch = () => {
   return (
@@ -12,6 +13,7 @@ const NoMatch = () => {
         <button className="shadow">RETURN HOME</button>
         <button className="shadow">REPORT PROBLEM</button>
       </div>
+      <ContextMenu />
     </div>
   );
 };

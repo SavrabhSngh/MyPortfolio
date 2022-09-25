@@ -11,6 +11,7 @@ import Projects from "./Projects/Projects";
 import About from "./About/index";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/index";
+import ContextMenu from "../Common/ContextMenu/ContextMenu";
 function Components(props) {
   const [documentState, setDocumentState] = useState(false);
   const [timmer, setTimmer] = useState(false);
@@ -39,6 +40,7 @@ function Components(props) {
           <Footer />
           <BasicModal />
           <Snackbars />
+          <ContextMenu />
         </div>
       );
     }
