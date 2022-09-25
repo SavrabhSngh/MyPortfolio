@@ -13,9 +13,10 @@ function ProjectsCard(props) {
     <Grid
       display={
         props.index < 4
-          ? { xs: "block", md: "block", lg: "block" }
-          : { xs: "none", md: "block", lg: "block" }
+          ? { xs: "flex", md: "flex", lg: "flex" }
+          : { xs: "none", md: "flex", lg: "flex" }
       }
+      sx={{ justifyContent: "center", alignItems: "center" }}
       item
       lg={4}
       sm={6}

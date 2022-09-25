@@ -9,6 +9,7 @@ import { TestimonialData } from "../../Services/DataService";
 import Avatar from "@mui/material/Avatar";
 
 const Testimonial = () => {
+  let width = window.screen.width;
   return (
     <div className="testimonial">
       <h4>HAPPY CLIENT WORKS !</h4>
@@ -21,7 +22,7 @@ const Testimonial = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={width > 676 ? 2 : 1}
         pagination={{ clickable: true }}
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
