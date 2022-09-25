@@ -5,6 +5,7 @@
     background: #1b1a1a;
     border-radius: 5px;
     transform-origin: top left;
+    display: none;
 }
   
 #context-menu .item {

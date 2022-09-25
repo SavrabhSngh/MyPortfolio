@@ -12,23 +12,32 @@ const ContextMenu = () => {
     contextRef.current.style.display = "block";
   };
 
-  useEffect(() => {
-    document.addEventListener("scroll", (event) => {
+  const handleScroll = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if (contextRef.current.style?.display === "block") {
       event.preventDefault();
-      event.stopPropagation();
-      if (contextRef.current.style?.display === "block") {
-        event.preventDefault();
-      }
-    });
+    }
+  };
+
+  const handleClick = () => {
+    if (contextRef.current.style?.display) {
+      contextRef.current.style.display = "none";
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+      scope.removeEventListener("click", handleClick);
+      scope.removeEventListener("contextmenu", handleContextMenu);
+    };
   }, []);
 
   useEffect(() => {
     scope.addEventListener("contextmenu", handleContextMenu);
-    scope?.addEventListener("click", (event) => {
-      if (contextRef.current.style?.display) {
-        contextRef.current.style.display = "none";
-      }
-    });
+    scope.addEventListener("click", handleClick);
   }, [contextRef.current]);
 
   return (
