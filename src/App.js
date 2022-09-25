@@ -13,7 +13,9 @@ const App = () => {
 
   useEffect(() => {
     url = window.location.href;
+    console.log("url", url, process.env.REACT_APP_GIT_URL);
     if (_.isEqual(url, process.env.REACT_APP_GIT_URL)) {
+      console.log("condition is true");
       route = "/MyPortfolio";
     }
     window.addEventListener("contextmenu", handleContextMenu);
@@ -22,6 +24,7 @@ const App = () => {
     };
   }, []);
 
+  console.log("final route", route);
   return (
     <Router>
       <Routes>
