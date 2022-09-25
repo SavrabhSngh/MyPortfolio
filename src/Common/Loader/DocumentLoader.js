@@ -13,7 +13,7 @@ const DocumentLoader = () => {
     <div className="document-loader">
       <Lottie options={defaultOptions} height={200} width={200} />
       <h5>
-        <span>Welcome</span> to the world of Awesomness !
+        <span>Welcome</span> to my world !
       </h5>
     </div>
   );

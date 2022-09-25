@@ -47,3 +47,27 @@
     height: auto;
     width: auto;
 }
+
+@media (max-width: 676px) {
+    .left-about h1 {
+        font-size: 29px;
+        color: #3c3e41;
+    }
+
+    .left-about h2 {
+        font-size: 22px;
+        margin-bottom: 2vh;
+    }
+
+    .left-about h3 {
+        letter-spacing: 1px;
+    }
+
+    .left-about p {
+        padding-right: 0px!important;
+    }
+
+    .about-text{
+        display: none;
+    }
+}

@@ -37,7 +37,7 @@ const LHSabout = () => {
         <RHSabout />
       </Container>
       <p>{DUMMY_TEXT}</p>
-      <p>{DUMMY_TEXT}</p>
+      <p className="about-text">{DUMMY_TEXT}</p>
       <div className="about-skills">
         <h4>BEST SKILLS ON</h4>
         <button className="shadow">

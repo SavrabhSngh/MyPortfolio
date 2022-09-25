@@ -11,6 +11,7 @@ import Projects from "./Projects/Projects";
 import About from "./About/index";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/index";
+import Testimonial from "./Testimonial/Testimonial";
 import ContextMenu from "../Common/ContextMenu/ContextMenu";
 function Components(props) {
   const [documentState, setDocumentState] = useState(false);
@@ -35,6 +36,7 @@ function Components(props) {
             <About />
             <Features />
             <Projects />
+            <Testimonial />
             <Contact />
           </div>
           <Footer />

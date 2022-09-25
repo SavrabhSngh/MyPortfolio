@@ -1,0 +1,68 @@
+.testimonial {
+    margin-top: 8vh;
+}
+
+.testimonial h4 {
+    font-size: 50px;
+}
+
+.testimonial .round {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff014f;
+}
+
+.testimonial .line {
+    height: 5px;
+    width: 20vw;
+    background: #ff014f;
+}
+
+.testimonial .card {
+    padding: 5% 5% 5% 5%;
+}
+
+.testimonial .card:hover {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);;
+    color: #43474b;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.testimonial .card {
+    text-align: justify;
+}
+
+.testimonial .card  i {
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translateY(-4px);
+    color: #ff014f;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.profile{
+    margin-top: 2vh;
+}
+
+.profile-details {
+    flex-direction: column;
+    padding-left: 1vw;
+}
+
+
+@media (max-width: 676px) {
+    .testimonial h4 {
+        font-size: 27px;
+    }
+
+    .testimonial .line {
+        width: 35vw;
+    }
+}

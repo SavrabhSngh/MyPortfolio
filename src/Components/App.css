@@ -42,5 +42,16 @@
 
     .heading h4 {
         letter-spacing: 0px;
+        white-space: initial;
     }
+
+    .heading h1 {
+        font-size: 27px;
+        color: #3c3e41;
+    }
+
+    .text-align {
+        text-align: center;
+    }
+
 }

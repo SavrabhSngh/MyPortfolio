@@ -7,7 +7,7 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <section className="projects" id="projects">
-      <div className="heading">
+      <div className="heading text-align">
         <h4>VISIT MY PROJECTS AND GIVE YOUR FEEDBACK</h4>
         <h1>My Projects</h1>
       </div>

@@ -25,7 +25,9 @@ const ContextMenu = () => {
   useEffect(() => {
     scope.addEventListener("contextmenu", handleContextMenu);
     scope?.addEventListener("click", (event) => {
-      contextRef.current.style.display = "none";
+      if (contextRef.current.style?.display) {
+        contextRef.current.style.display = "none";
+      }
     });
   }, [contextRef.current]);
 

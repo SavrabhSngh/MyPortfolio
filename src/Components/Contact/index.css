@@ -82,3 +82,9 @@
 .contact-submit i {
     margin-left: 10px;
 }
+
+@media (max-width: 676px) {
+    .contact-me h3 {
+        margin-top: 4vh;
+    }
+}
