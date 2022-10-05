@@ -6,7 +6,7 @@ import RHSabout from "./RHSComponent";
 
 const useStyles = makeStyles({
   about: {
-    marginTop: "12vh",
+    marginTop: "4vh",
   },
 });
 

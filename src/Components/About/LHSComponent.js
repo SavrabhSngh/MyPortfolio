@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Typewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
-import { DUMMY_TEXT } from "../../Messages";
+import { DUMMY_TEXT } from "../../Services/Messages";
 import RHSabout from "./RHSComponent";
 
 const LHSabout = () => {

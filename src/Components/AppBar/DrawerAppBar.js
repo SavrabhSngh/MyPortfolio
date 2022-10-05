@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./DrawerAppBar.css";
-import { downloadPdf } from "../../Helpers";
+import { downloadPdf } from "../../Services/Helpers";
 
 const navItems = ["Features", "Projects", "Testimonial", "Contact", "Resume"];
 
@@ -105,6 +105,7 @@ function DrawerAppBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
+      <Toolbar />
       <Box component="nav">
         <Drawer
           container={container}

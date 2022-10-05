@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Grid from "@mui/material/Grid";
 import { hideModal } from "../../Store/Modal/action";
-import { DUMMY_TEXT } from "../../Messages";
+import { DUMMY_TEXT } from "../../Services/Messages";
 
 const style = {
   position: "absolute",
