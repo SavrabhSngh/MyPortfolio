@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioData } from "../../Services/DataService";
+import { ProjectsData } from "../../Services/DataService";
 import ProjectsCard from "../../Common/ProjectsCard";
 import Grid from "@mui/material/Grid";
 import "./Projects.css";
@@ -13,7 +13,7 @@ const Projects = () => {
       </div>
       <div className="content grid">
         <Grid container rowSpacing={4} columnSpacing={{ lg: 5, sm: 4, md: 5 }}>
-          {PortfolioData.map((obj, index) => {
+          {ProjectsData.map((obj, index) => {
             return (
               <ProjectsCard
                 key={index}
@@ -22,6 +22,7 @@ const Projects = () => {
                 totalLike={obj.totalLike}
                 category={obj.category}
                 index={index}
+                status={obj.status}
               />
             );
           })}

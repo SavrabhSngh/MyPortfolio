@@ -14,6 +14,7 @@ import Contact from "./Contact/index";
 import Testimonial from "./Testimonial/Testimonial";
 import ContextMenu from "../Common/ContextMenu/ContextMenu";
 import Experience from "./Experience/Experience";
+import SocialMedia from "./SocialMedia/SocialMedia";
 function Components(props) {
   const [documentState, setDocumentState] = useState(false);
   const [timmer, setTimmer] = useState(false);
@@ -40,6 +41,7 @@ function Components(props) {
             <Projects />
             <Testimonial />
             <Contact />
+            <SocialMedia />
           </div>
           <Footer />
           <BasicModal />

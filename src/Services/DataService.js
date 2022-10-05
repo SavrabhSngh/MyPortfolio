@@ -9,70 +9,75 @@ export const FeaturesData = [
   {
     id: 2,
     image: "https://img.icons8.com/material-outlined/64/000000/topic--v1.png ",
-    title: "Mobile App",
+    title: "Mobile Application",
     desc: "There are many variations of passages of Lorem Ipsum	available, but the majority.",
   },
   {
     id: 3,
     image: "https://img.icons8.com/ios/40/000000/open-book.png",
-    title: "App Development",
-    desc: " It uses a dictionary of over 200 Latin words, combined witha handful of model sentence.",
+    title: "Desktop Applicaton",
+    desc: "It uses a dictionary of over 200 Latin words, combined witha handful of model sentence.",
   },
   {
     id: 4,
     image: "https://img.icons8.com/ios/64/000000/menu.png",
-    title: "Business Stratagy",
+    title: "Deployment",
     desc: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
     id: 5,
     image: "https://img.icons8.com/ios-filled/64/000000/wifi.png ",
-    title: "CEO Marketing",
+    title: "DevOps",
     desc: "always free from repetition, injected humour, or non-characteristic words etc.",
   },
   {
     id: 6,
     image: "https://img.icons8.com/glyph-neue/50/000000/polyline.png ",
-    title: "Personal Portfolio April",
-    desc: " It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.",
+    title: "Business Stratagy",
+    desc: "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.",
   },
 ];
 
-export const PortfolioData = [
+export const ProjectsData = [
   {
     id: 1,
-    category: "DEVELOPMENT",
+    category: "E-COMMERCE",
     totalLike: "600",
     title: "The services provide for design ",
     image: "./images/app.jpg",
+    status: "Deployed",
   },
   {
     id: 2,
-    category: "WEB DESIGN",
+    category: "MY POTFOLIO",
     totalLike: "280",
     title: "Design for tecnology & services",
     image: "./images/web.jpg",
+    status: "In-progress",
   },
   {
     id: 3,
-    category: "APPLICATION",
+    category: "CHAT APPLICATION",
     totalLike: "750",
     title: "Mobile app landing design & maintain",
     image: "./images/mobile.jpg",
+    status: "Comming Soon",
   },
   {
     id: 4,
-    category: "PHOTOSHOP",
+    category: "BLOG APPLICATION",
     totalLike: "630",
     title: "Logo design creativity & Application ",
     image: "./images/photoshop.jpg",
+    status: "Comming Soon",
   },
   {
     id: 5,
-    category: "FIGMA",
+    category: "KEY INFO APPLICATION",
     totalLike: "360",
     title: "Mobile app landing design & Services",
     image: "./images/app.jpg",
+    status: "Comming Soon",
   },
   {
     id: 6,
@@ -80,6 +85,7 @@ export const PortfolioData = [
     totalLike: "690",
     title: "App for tecnology & services",
     image: "./images/web.jpg",
+    status: "Comming Soon",
   },
 ];
 

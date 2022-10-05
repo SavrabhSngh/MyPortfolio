@@ -10,6 +10,9 @@ const LHSContact = () => {
           GOKHIWARE, VASAI EAST - 401208
         </p>
         <p>
+          <i className="fas fa-envelope"></i> contactsaurabhsngh@gmail.com
+        </p>
+        <p>
           <i className="fas fa-mobile"></i> +91 9026472660
         </p>
       </div>

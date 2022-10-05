@@ -1,0 +1,23 @@
+.socail-media {
+    position: fixed;
+    right: 0;
+    bottom: 8vh;
+    background-color: #ff014f;
+    color: white;
+    opacity: 0.6;
+    padding: 10px;
+    z-index: 99;
+    padding-top: 10px;
+}
+
+.media-element i {
+    font-size: 25px;
+    padding: 0px 5px 10px 5px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .socail-media {
+        display: none;
+    }
+}

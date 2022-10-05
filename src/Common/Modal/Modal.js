@@ -5,6 +5,7 @@ import "./Modal.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Grid from "@mui/material/Grid";
+import Chip from "@mui/material/Chip";
 import { hideModal } from "../../Store/Modal/action";
 import { DUMMY_TEXT } from "../../Services/Messages";
 
@@ -48,7 +49,14 @@ function BasicModal(props) {
               lg={6}
             >
               <div className="right-side">
-                <span>Featured-Design</span>
+                <span className="featured">Featured-Design</span>
+                <span className="chip">
+                  <Chip
+                    label={props.ModalData.status}
+                    color="success"
+                    variant="outlined"
+                  />
+                </span>
                 <h1>{props.ModalData.title}</h1>
                 <p>{DUMMY_TEXT}</p>
                 <p>{DUMMY_TEXT}</p>

@@ -7,6 +7,7 @@ const initialState = {
   totalLike: "",
   title: "",
   image: "",
+  status: "",
 };
 
 export const modalReducer = (state = initialState, action) => {

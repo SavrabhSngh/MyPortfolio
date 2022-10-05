@@ -38,9 +38,13 @@
     font-size: 15px;
 }
 
-.right-side span {
+.right-side .featured {
     color: #ff014f;
 } 
+
+.right-side .chip {
+    margin-left: 10px;
+}
 
 .right-side h1 {
     font-size: 25px;
