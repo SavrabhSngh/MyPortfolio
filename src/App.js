@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Components />}></Route>
+        <Route exact path="/MyPortfolio" element={<Components />}></Route>
         <Route path="*" element={<NoMatch />}></Route>
       </Routes>
     </Router>
