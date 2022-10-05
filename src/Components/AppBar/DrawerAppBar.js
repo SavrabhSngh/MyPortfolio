@@ -49,7 +49,7 @@ function DrawerAppBar(props) {
   const handleClick = (e) => {
     const text = e.target.outerText;
     if (!text.localeCompare("Resume")) {
-      downloadPdf("./pdf/resumes.pdf", "SavrabhSDE.pdf");
+      downloadPdf("./pdf/resume.pdf", "SavrabhSDE.pdf");
     }
   };
 
