@@ -35,7 +35,12 @@ function BasicModal(props) {
               item
               lg={5}
             >
-              <img className="modal-image" src={props.ModalData.image} alt="" />
+              <img
+                className="modal-image"
+                src={props.ModalData.image}
+                alt=""
+                draggable="false"
+              />
             </Grid>
             <Grid
               display={{ xs: "none", md: "block", lg: "block" }}

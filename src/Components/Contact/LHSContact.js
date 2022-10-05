@@ -3,7 +3,7 @@ const LHSContact = () => {
     <div className="contact-me">
       <div className="card">
         <div className="contact-image">
-          <img src="./images/contact.png" alt="contact" />
+          <img src="./images/contact.png" alt="contact" draggable="false" />
         </div>
         <p>
           <i className="fas fa-home"></i> B-201 FIRST AVENUE, FATHERWADI,

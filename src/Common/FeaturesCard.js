@@ -17,7 +17,7 @@ export default function FeaturesCard(props) {
       xs={12}
     >
       <div className="card">
-        <img src={props.image} alt="" />
+        <img src={props.image} alt="" draggable="false" />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <a href="#some">

@@ -34,7 +34,7 @@ const LHSabout = () => {
           alignItems: "center",
         }}
       >
-        <RHSabout />
+        <RHSabout mobile={true} />
       </Container>
       <p>{DUMMY_TEXT}</p>
       <p className="about-text">{DUMMY_TEXT}</p>

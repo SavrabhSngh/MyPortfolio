@@ -24,7 +24,7 @@ function ProjectsCard(props) {
       xs={12}
     >
       <div className="card" onClick={handleClick}>
-        <div className="img">
+        <div className="img" draggable="false">
           <img src={props.image} alt="" />
         </div>
         <div className="category">

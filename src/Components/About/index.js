@@ -30,7 +30,7 @@ const About = () => {
           sm={12}
           xs={12}
         >
-          <RHSabout />
+          <RHSabout mobile={false} />
         </Grid>
       </Grid>
     </div>
