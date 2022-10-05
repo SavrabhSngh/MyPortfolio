@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import "./DrawerAppBar.css";
 import { downloadPdf } from "../../Services/Helpers";
 
-const navItems = ["Features", "Projects", "Testimonial", "Contact", "Resume"];
+const navItems = ["Features", "Experience", "Projects", "Contact", "Resume"];
 
 function DrawerAppBar(props) {
   const { window } = props;

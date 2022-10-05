@@ -83,36 +83,46 @@ export const PortfolioData = [
   },
 ];
 
-export const ExperienceData = [
+export const ProfessionalExpData = [
   {
     id: 1,
-    color: "success",
-    company: "Flair Labs",
+    org: "Flair Labs",
     location: "Mumbai",
-    designation: "Associate Software Engineer",
+    title: "Associate Software Engineer",
     startDate: "July 2021",
     endDate: "Present",
-    description: ["Learned React", "Earned Money"],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
-    company: "GeeksforGeeks",
-    color: "secondary",
+    org: "GeeksforGeeks",
     location: "Noida",
-    designation: "Technical Content Writer",
+    title: "Technical Content Writer",
     startDate: "July 2021",
     endDate: "Sep 2021",
-    description: ["Learned React", "Earned Money"],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
-    company: "Fcreation LLP",
-    color: "secondary",
+    org: "Mumbai University (IDOL)",
     location: "Mumbai",
-    designation: "PHP Developer",
-    startDate: "Dec 2020",
-    endDate: "July 2021",
-    description: ["Learned React", "Earned Money"],
+    title: "Master of Computer Application",
+    startDate: "Oct 2021",
+    endDate: "Oct 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 4,
+    org: "RSMT",
+    location: "Varanasi",
+    title: "Bachelor of Computer Application",
+    startDate: "Aug 2018",
+    endDate: "Oct 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 

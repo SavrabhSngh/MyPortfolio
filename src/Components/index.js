@@ -13,6 +13,7 @@ import Footer from "./Footer/Footer";
 import Contact from "./Contact/index";
 import Testimonial from "./Testimonial/Testimonial";
 import ContextMenu from "../Common/ContextMenu/ContextMenu";
+import Experience from "./Experience/Experience";
 function Components(props) {
   const [documentState, setDocumentState] = useState(false);
   const [timmer, setTimmer] = useState(false);
@@ -35,6 +36,7 @@ function Components(props) {
           <div className="container">
             <About />
             <Features />
+            <Experience />
             <Projects />
             <Testimonial />
             <Contact />
