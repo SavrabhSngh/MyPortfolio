@@ -12,6 +12,11 @@ export const NAV_ITEMS = [
 export const WELCOME = "WELCOME TO MY WORLD";
 export const HI_I_AM = "Hi, I'm";
 export const NAME = "Savrabh Singh";
+export const TYPEWRITER_TEXT = [
+  "Software Engineer",
+  "Freelancer",
+  "MERN Stack developer",
+];
 export const BEST_SKILLS = "BEST SKILLS ON";
 
 //FEATURES

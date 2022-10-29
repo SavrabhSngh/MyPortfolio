@@ -2,24 +2,29 @@ import React from "react";
 import "./index.css";
 import { Typewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
-import { DUMMY_TEXT } from "../../Services/Messages";
+import { ABOUT_ME, DUMMY_TEXT } from "../../Services/Messages";
 import RHSabout from "./RHSComponent";
-import { WELCOME, HI_I_AM, NAME, BEST_SKILLS } from "../../Services/Constants";
+import {
+  WELCOME,
+  HI_I_AM,
+  NAME,
+  TYPEWRITER_TEXT,
+  BEST_SKILLS,
+} from "../../Services/Constants";
 
 const LHSabout = () => {
-  const words = ["Software Engineer", "Freelancer", "MERN Stack developer"];
   return (
     <div className="left-about">
       <h3>{WELCOME}</h3>
       <h1>
         {HI_I_AM}
-        <span>{NAME}</span>
+        <span>&nbsp;{NAME}</span>
       </h1>
       <h2>
         A{" "}
         <span>
           <Typewriter
-            words={words}
+            words={TYPEWRITER_TEXT}
             loop={0}
             cursor
             cursorStyle="|"
@@ -38,7 +43,7 @@ const LHSabout = () => {
       >
         <RHSabout mobile={true} />
       </Container>
-      <p>{DUMMY_TEXT}</p>
+      <p>{ABOUT_ME}</p>
       <p className="about-text">{DUMMY_TEXT}</p>
       <div className="about-skills">
         <h4>{BEST_SKILLS}</h4>
