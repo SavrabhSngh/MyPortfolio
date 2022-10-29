@@ -7,7 +7,7 @@ import { CONTACT, REACH_OUT } from "../../Services/Constants";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="heading">
         <h1>{CONTACT}</h1>
         <h4>{REACH_OUT}</h4>

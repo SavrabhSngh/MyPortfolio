@@ -8,7 +8,7 @@ import {
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <div className="heading">
         <h4>{EDUCATION_AND_EXPERIENCE}</h4>
         <h1>{PROFESSIONAL_QUALIFICATION}</h1>

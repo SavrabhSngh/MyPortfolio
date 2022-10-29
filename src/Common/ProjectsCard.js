@@ -36,7 +36,7 @@ function ProjectsCard(props) {
         </div>
         <div className="title">
           <h2>{props.title}</h2>
-          <a href="#popup" className="arrow">
+          <a className="arrow">
             <i className="fas fa-arrow-right"></i>
           </a>
         </div>

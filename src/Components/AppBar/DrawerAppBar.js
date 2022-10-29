@@ -15,13 +15,39 @@ import Typography from "@mui/material/Typography";
 import "./DrawerAppBar.css";
 import { downloadPdf } from "../../Services/Helpers";
 import { CAPS_NAME, FULL_NAME, NAV_ITEMS } from "../../Services/Constants";
+import _ from "lodash";
 
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const getElementAndScroll = (elem) => {
+    const element = document.getElementById(elem);
+    element?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const handleClick = (e) => {
+    const text = e.target.outerText;
+    if (_.isEqual(text, "Features")) {
+      getElementAndScroll("features");
+    } else if (_.isEqual(text, "Experience")) {
+      getElementAndScroll("experience");
+    } else if (_.isEqual(text, "Projects")) {
+      getElementAndScroll("projects");
+    } else if (_.isEqual(text, "Contact")) {
+      getElementAndScroll("contact");
+    } else if (_.isEqual(text, "Resume")) {
+      downloadPdf("./pdf/resume.pdf", "SavrabhSDE.pdf");
+    }
   };
 
   const drawer = (
@@ -33,7 +59,7 @@ function DrawerAppBar(props) {
       <List>
         {NAV_ITEMS.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton sx={{ textAlign: "center" }} onClick={handleClick}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -41,16 +67,6 @@ function DrawerAppBar(props) {
       </List>
     </Box>
   );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
-  const handleClick = (e) => {
-    const text = e.target.outerText;
-    if (!text.localeCompare("Resume")) {
-      downloadPdf("./pdf/resume.pdf", "SavrabhSDE.pdf");
-    }
-  };
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -91,7 +107,6 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {NAV_ITEMS.map((item, index) => (
               <a
-                href="#some"
                 key={item}
                 className={
                   index === NAV_ITEMS.length - 1 ? "nav-button" : "nav-content"

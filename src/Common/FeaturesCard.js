@@ -20,7 +20,7 @@ export default function FeaturesCard(props) {
         <img src={props.image} alt="" draggable="false" />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
-        <a href="#some">
+        <a>
           <i className="fas fa-arrow-right"></i>
         </a>
       </div>
