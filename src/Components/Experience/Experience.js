@@ -1,12 +1,17 @@
 import "./Experience.css";
 import Timeline from "../../Common/Timeline/Timeline";
 import { ProfessionalExpData } from "../../Services/DataService";
+import {
+  EDUCATION_AND_EXPERIENCE,
+  PROFESSIONAL_QUALIFICATION,
+} from "../../Services/Constants";
+
 const Experience = () => {
   return (
     <div className="experience">
       <div className="heading">
-        <h4>EDUCATION & PROFESSIONAL EXPERIENCE</h4>
-        <h1>Professional Qualification</h1>
+        <h4>{EDUCATION_AND_EXPERIENCE}</h4>
+        <h1>{PROFESSIONAL_QUALIFICATION}</h1>
       </div>
       <div className="exp-timeline">
         <section className="timeline-section">

@@ -4,14 +4,16 @@ import { Typewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
 import { DUMMY_TEXT } from "../../Services/Messages";
 import RHSabout from "./RHSComponent";
+import { WELCOME, HI_I_AM, NAME, BEST_SKILLS } from "../../Services/Constants";
 
 const LHSabout = () => {
   const words = ["Software Engineer", "Freelancer", "MERN Stack developer"];
   return (
     <div className="left-about">
-      <h3>WELCOME TO MY WORLD</h3>
+      <h3>{WELCOME}</h3>
       <h1>
-        Hi, I'm <span>Savrabh Singh</span>
+        {HI_I_AM}
+        <span>{NAME}</span>
       </h1>
       <h2>
         A{" "}
@@ -39,7 +41,7 @@ const LHSabout = () => {
       <p>{DUMMY_TEXT}</p>
       <p className="about-text">{DUMMY_TEXT}</p>
       <div className="about-skills">
-        <h4>BEST SKILLS ON</h4>
+        <h4>{BEST_SKILLS}</h4>
         <button className="shadow">
           <i className="fab fa-react"></i>
         </button>

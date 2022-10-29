@@ -7,12 +7,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { TestimonialData } from "../../Services/DataService";
 import Avatar from "@mui/material/Avatar";
+import { HAPPY_CLIENT_WORKS } from "../../Services/Constants";
 
 const Testimonial = () => {
   let width = window.screen.width;
   return (
     <div className="testimonial">
-      <h4>HAPPY CLIENT WORKS !</h4>
+      <h4>{HAPPY_CLIENT_WORKS}</h4>
       <div
         style={{ display: "flex", alignItems: "center", marginBottom: "4vh" }}
       >
@@ -24,8 +25,6 @@ const Testimonial = () => {
         spaceBetween={50}
         slidesPerView={width > 676 ? 2 : 1}
         pagination={{ clickable: true }}
-        // onSlideChange={() => console.log("slide change")}
-        // onSwiper={(swiper) => console.log(swiper)}
       >
         {TestimonialData.map((obj, index) => {
           return (

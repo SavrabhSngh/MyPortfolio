@@ -8,6 +8,11 @@ import Grid from "@mui/material/Grid";
 import Chip from "@mui/material/Chip";
 import { hideModal } from "../../Store/Modal/action";
 import { DUMMY_TEXT } from "../../Services/Messages";
+import {
+  FEATURED_DESIGN,
+  LIKE_THIS,
+  VIEW_PROJECT,
+} from "../../Services/Constants";
 
 const style = {
   position: "absolute",
@@ -49,7 +54,7 @@ function BasicModal(props) {
               lg={6}
             >
               <div className="right-side">
-                <span className="featured">Featured-Design</span>
+                <span className="featured">{FEATURED_DESIGN}</span>
                 <span className="chip">
                   <Chip
                     label={props.ModalData.status}
@@ -62,10 +67,10 @@ function BasicModal(props) {
                 <p>{DUMMY_TEXT}</p>
                 <div className="button">
                   <button className="shadow">
-                    LIKE THIS <i className="far fa-thumbs-up"></i>
+                    {LIKE_THIS} <i className="far fa-thumbs-up"></i>
                   </button>
                   <button className="shadow">
-                    VIEW PROJECT <i className="fas fa-chevron-right"></i>
+                    {VIEW_PROJECT} <i className="fas fa-chevron-right"></i>
                   </button>
                 </div>
                 <div className="close-button card" onClick={props.hideModal}>

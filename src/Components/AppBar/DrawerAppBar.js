@@ -14,8 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./DrawerAppBar.css";
 import { downloadPdf } from "../../Services/Helpers";
-
-const navItems = ["Features", "Experience", "Projects", "Contact", "Resume"];
+import { CAPS_NAME, FULL_NAME, NAV_ITEMS } from "../../Services/Constants";
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -28,11 +27,11 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        SAVRABH SINGH
+        {CAPS_NAME}
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {NAV_ITEMS.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
@@ -80,22 +79,22 @@ function DrawerAppBar(props) {
               display: { lg: "none", xs: "block", md: "none", sm: "none" },
             }}
           >
-            SAVRABH SINGH
+            {CAPS_NAME}
           </Typography>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            SAVRABH R SINGH
+            {FULL_NAME}
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item, index) => (
+            {NAV_ITEMS.map((item, index) => (
               <a
                 href="#some"
                 key={item}
                 className={
-                  index === navItems.length - 1 ? "nav-button" : "nav-content"
+                  index === NAV_ITEMS.length - 1 ? "nav-button" : "nav-content"
                 }
                 onClick={handleClick}
               >
