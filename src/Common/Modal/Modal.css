@@ -42,10 +42,6 @@
     color: #ff014f;
 } 
 
-.right-side .chip {
-    margin-left: 10px;
-}
-
 .right-side h1 {
     font-size: 25px;
     margin-top: 2vh;
@@ -58,4 +54,85 @@
 .modal-image {
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 676px) {
+    .shadow {
+        margin-top: 15px;
+        margin-right: 10px;
+        border-radius: 6px;
+        padding: 13px 15px;
+    }
+
+    .close-button {
+        top: 15px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .right-side p {
+        text-align: justify;
+        margin-top: 1vh;
+        font-size: 11px;
+    }
+
+    .right-side .featured {
+        font-size: 13px;
+    } 
+    
+    .right-side h1 {
+        font-size: 16px;
+        margin-top: 1vh;
+    }
+    
+    .right-side button i {
+        margin-left: 10px;
+    }
+
+    .project-dec {
+        display: none;
+    }
+}
+
+@media(min-width: 676px) and (max-width: 1024px){
+    .shadow {
+        margin-top: 15px;
+        margin-right: 10px;
+        border-radius: 6px;
+        padding: 13px 15px;
+    }
+
+    .close-button {
+        top: 20px;
+        right: 28px;
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+    .modal-image {
+        width: 52%;
+        height: auto;
+    }
+
+    .right-side p {
+        text-align: justify;
+        margin-top: 1vh;
+        font-size: 13px;
+    }
+
+    .right-side .featured {
+        font-size: 14px;
+    } 
+    
+    .right-side h1 {
+        font-size: 18px;
+        margin-top: 1vh;
+    }
+    
+    .right-side button i {
+        margin-left: 10px;
+    }
 }

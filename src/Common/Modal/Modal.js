@@ -5,7 +5,6 @@ import "./Modal.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Grid from "@mui/material/Grid";
-import Chip from "@mui/material/Chip";
 import { hideModal } from "../../Store/Modal/action";
 import { DUMMY_TEXT } from "../../Services/Messages";
 import {
@@ -20,10 +19,10 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "80%",
-  height: "80%",
+  height: "81%",
   bgcolor: "#ecf0f3",
   boxShadow: 24,
-  p: 5,
+  p: { lg: 5, md: 4, sm: 3, xs: 3 },
 };
 
 function BasicModal(props) {
@@ -35,11 +34,14 @@ function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Grid container rowSpacing={3} columnSpacing={{ lg: 4, md: 4 }}>
+          <Grid container rowSpacing={3} columnSpacing={{ lg: 5, md: 4 }}>
             <Grid
-              display={{ xs: "none", md: "block", lg: "block" }}
+              display={{ sm: "flex", xs: "flex", md: "flex", lg: "block" }}
+              justifyContent="center"
               item
-              lg={5}
+              lg={6}
+              md={12}
+              sm={12}
             >
               <img
                 className="modal-image"
@@ -49,22 +51,17 @@ function BasicModal(props) {
               />
             </Grid>
             <Grid
-              display={{ xs: "none", md: "block", lg: "block" }}
+              display={{ xs: "block", md: "block", lg: "block" }}
               item
               lg={6}
+              md={12}
+              sm={12}
             >
               <div className="right-side">
                 <span className="featured">{FEATURED_DESIGN}</span>
-                <span className="chip">
-                  <Chip
-                    label={props.ModalData.status}
-                    color="success"
-                    variant="outlined"
-                  />
-                </span>
                 <h1>{props.ModalData.title}</h1>
                 <p>{DUMMY_TEXT}</p>
-                <p>{DUMMY_TEXT}</p>
+                <p className="project-dec">{DUMMY_TEXT}</p>
                 <div className="button">
                   <button className="shadow">
                     {LIKE_THIS} <i className="far fa-thumbs-up"></i>
