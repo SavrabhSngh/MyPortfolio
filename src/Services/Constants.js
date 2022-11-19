@@ -57,7 +57,7 @@ export const REPORT_PROBLEM = "REPORT PROBLEM";
 export const RETURN_HOME = "RETURN HOME";
 
 //LOADER
-export const LOADER_WELCOME = "WELCOME";
+export const LOADER_WELCOME = "Welcome";
 export const LOADER_WORLD = "to my world !";
 
 //MODAL
