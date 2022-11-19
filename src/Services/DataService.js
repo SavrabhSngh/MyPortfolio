@@ -41,19 +41,19 @@ export const FeaturesData = [
 export const ProjectsData = [
   {
     id: 1,
-    category: "E-COMMERCE",
+    category: "Consort",
     totalLike: "600",
-    title: "The services provide for design ",
-    image: "./images/app.jpg",
+    title: "Collaborative platform for Developers",
+    image: "./images/projects/consort.png",
     status: "Deployed",
   },
   {
     id: 2,
-    category: "MY POTFOLIO",
+    category: "My Portfolio",
     totalLike: "280",
     title: "Design for tecnology & services",
-    image: "./images/web.jpg",
-    status: "In-progress",
+    image: "./images/projects/portfolio.png",
+    status: "Deployed",
   },
   {
     id: 3,
