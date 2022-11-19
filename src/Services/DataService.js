@@ -4,37 +4,37 @@ export const FeaturesData = [
     image:
       "https://img.icons8.com/fluency-systems-regular/64/000000/retro-tv.png ",
     title: "Web Development",
-    desc: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+    desc: "Expertised in developing Progressive Web Apps & Single Page Applications in React & Angular.",
   },
   {
     id: 2,
     image: "https://img.icons8.com/material-outlined/64/000000/topic--v1.png ",
     title: "Mobile Application",
-    desc: "There are many variations of passages of Lorem Ipsum	available, but the majority.",
+    desc: "Have worked with Ionic and React Native for building Mobile Applications.",
   },
   {
     id: 3,
     image: "https://img.icons8.com/ios/40/000000/open-book.png",
     title: "Desktop Applicaton",
-    desc: "It uses a dictionary of over 200 Latin words, combined witha handful of model sentence.",
+    desc: "Skilled in building complex desktop application using Ionic and Electon.",
   },
   {
     id: 4,
     image: "https://img.icons8.com/ios/64/000000/menu.png",
     title: "Deployment",
-    desc: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+    desc: "Having hands-on experience in deployment on Amazon Web Services (AWS), Cpannel, and Playstore.",
   },
   {
     id: 5,
     image: "https://img.icons8.com/ios-filled/64/000000/wifi.png ",
     title: "DevOps",
-    desc: "always free from repetition, injected humour, or non-characteristic words etc.",
+    desc: "Sound knowledge on Docker, CI/CD (Github Action & Genkins) & Version Control.",
   },
   {
     id: 6,
     image: "https://img.icons8.com/glyph-neue/50/000000/polyline.png ",
     title: "Business Stratagy",
-    desc: "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.",
+    desc: "Loves to involve in business strategy to take the product to the next level.",
   },
 ];
 
@@ -98,7 +98,7 @@ export const ProfessionalExpData = [
     startDate: "July 2021",
     endDate: "Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Worked with Sockets, WebRTC, Media Stream and third-party API for developing an assisted video KYC application for IDFY. Worked with React JS, TypeScript and Material UI for developing the User Interface and Node JS, Express, and MongoDB for developing the back-end of the application.",
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export const ProfessionalExpData = [
     startDate: "July 2021",
     endDate: "Sep 2021",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "During this part-time internship wrote different articles in PHP. Total of 10+ articles has been published till now on GeeksforGeeks portal.",
   },
   {
     id: 3,
@@ -118,7 +118,7 @@ export const ProfessionalExpData = [
     startDate: "Oct 2021",
     endDate: "Oct 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Pursuing Master of Application (MCA) from Mumbai University (IDOL) in 2021-2023",
   },
   {
     id: 4,
@@ -128,7 +128,7 @@ export const ProfessionalExpData = [
     startDate: "Aug 2018",
     endDate: "Oct 2021",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Passed Bachelor of Computer Application (BCA) from Rajarshi School of Management & Technology, Varanasi with 73% in 2018-21.",
   },
 ];
 

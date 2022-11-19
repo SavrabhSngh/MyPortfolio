@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Typewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
-import { ABOUT_ME, DUMMY_TEXT } from "../../Services/Messages";
+import { ABOUT_ME, ABOUT_ME2 } from "../../Services/Messages";
 import RHSabout from "./RHSComponent";
 import {
   WELCOME,
@@ -44,7 +44,7 @@ const LHSabout = () => {
         <RHSabout mobile={true} />
       </Container>
       <p>{ABOUT_ME}</p>
-      <p className="about-text">{DUMMY_TEXT}</p>
+      <p className="about-text">{ABOUT_ME2}</p>
       <div className="about-skills">
         <h4>{BEST_SKILLS}</h4>
         <button className="shadow">
