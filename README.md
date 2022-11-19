@@ -5,6 +5,6 @@ Dedicated and efficient Associate Software Engineer with more than 1.3 years of 
 ### FIND ME ON
 
 [Whatsapp](http://wa.me/+919026472660)
-[http://www.linkedin.com/in/singh-savrabh-radhemohan](Linkedin)
-[https://www.instagram.com/saurabh_here07](Instagram)
+[Linkedin](http://www.linkedin.com/in/singh-savrabh-radhemohan)
+[Instagram](https://www.instagram.com/saurabh_here07)
 Email : contactsaurabhsngh@gmail.com
