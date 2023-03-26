@@ -46,7 +46,7 @@ function DrawerAppBar(props) {
     } else if (_.isEqual(text, "Contact")) {
       getElementAndScroll("contact");
     } else if (_.isEqual(text, "Resume")) {
-      downloadPdf("./pdf/resume.pdf", "SavrabhSDE.pdf");
+      downloadPdf("./pdf/SavrabhSDE.pdf", "SavrabhSDE.pdf");
     }
   };
 
